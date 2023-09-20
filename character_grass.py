@@ -7,6 +7,7 @@ grass = load_image('grass.png')
 character = load_image('character.png')
 
 
+
 def render_all(x,y):
         clear_canvas_now()
         grass.draw_now(400,30)
