@@ -17,7 +17,7 @@ def render_all(x,y):
 def run_circle():
     print('circle')
 
-    cx, cy, r = 300, 200, 200
+    cx, cy, r = 400, 300, 200
 
     for deg in range(0, 360, 5):
         x = cx + r * math.cos(deg/ 360 * 2 * math.pi)
@@ -31,17 +31,17 @@ def run_rectangle():
     print('rectangle')
     
     #bottom line
-    #for x in range(50, 750+1, 10):
-    #   render_all(x,90)
+    for x in range(50, 750+1, 10):
+       render_all(x,90)
 
     #right line
-    #for y in range(90, 550+1, 10):
-    #    render_all(750, y)
+    for y in range(90, 550+1, 10):
+        render_all(750, y)
     
 
     #top line        
-    #for x in range(750, 50-1, -10):
-    #   render_all(x,550)
+    for x in range(750, 50-1, -10):
+       render_all(x,550)
 
     #left line
     for y in range(550, 90-1, -10):
@@ -49,10 +49,9 @@ def run_rectangle():
 
 
 while True:
-    #run_circle()
+    run_circle()
     run_rectangle()
-    #break
-
+    
 
     
     
